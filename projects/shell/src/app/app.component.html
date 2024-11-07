@@ -1,0 +1,36 @@
+<div class="p-5">
+  <h2>Angular Microfrontend Application Demo</h2>
+  <hr />
+  <ul>
+    <li>
+      <a
+        [routerLink]="['']"
+        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['shop']"
+        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+        >Shop</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['admin']"
+        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+        >Admin</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['dashboard']"
+        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+        >Dashboard</a
+      >
+    </li>
+  </ul>
+  <hr />
+  <router-outlet></router-outlet>
+</div>

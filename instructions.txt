@@ -1,0 +1,19 @@
+https://www.wdcoders.com/post/building-modular-angular-applications-with-micro-frontends-and-native-federation
+
+Create the workspace:
+ng n ws --create-application=false
+
+Open in VS Code
+
+Inside, ng generate application shell --prefix app-shell
+
+Then, generate microfrontend applications using ng generate application <name>
+
+Install a dev dependency
+npm i -D @angular-architects/native-federation
+
+Configure host and remote applications
+ng g @angular-architects/native-federation:init --project shell --port 4200 --type dynamic-host
+
+Configure for remote applications
+ng g @angular-architects/native-federation:init --project mfe-app1 --port 4201 --type remote
